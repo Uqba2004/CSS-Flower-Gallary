@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colourful World</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main {
+            padding-top: 100px;
+        }
+
+        .header {
+            width: 100%;
+            position: fixed;
+            padding: 20px 30px;
+            background-color: seashell;
+            color: black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+        }
+
+        .gallary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto;
+        }
+
+        .gallary-item {
+            background-color: rgb(117, 178, 232);
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgb(0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .gallary-item:hover {
+            transform: translate(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallary-item img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .footer {
+            background-color: seashell;
+            color: black;
+            text-align: right;
+            padding: 15px 20px;
+        }
+        @media (max-width: 768px) {
+            .gallary {
+                display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto;
+                }
+        }
+    </style>
+</head>
+<body class="body">
+    <header class="header">
+    <h1>Blooming Season</h1>
+    <p>Be patience your Blooming Season will arive soon</p>
+    </header>
+    <main class="main">
+        <div class="gallary">
+            <div class="gallary-item">
+            <img src="Damask Rose.jpg" alt="">
+        </div>
+        <div class="gallary-item">
+            <img src="Blanket Flower.jpg" alt="">
+        </div>
+        <div class="gallary-item">
+            <img src="Bougainvillea.jpg" alt="">
+        </div>
+        <div class="gallary-item">
+            <img src="Crown of Thorns.jpg" alt="">
+        </div>
+        <div class="gallary-item">
+            <img src="Floribunda Rose.jpg" alt="">
+        </div>
+        <div class="gallary-item">
+            <img src="Madagascar Periwinkles.jpg" alt="">
+        </div>
+        <div class="gallary-item">
+            <img src="White Bougainvillea.jpg" alt="">
+        </div>
+        <div class="gallary-item">
+            <img src="Duranta Erecta.jpg" alt="">
+        </div>
+        <div class="gallary-item">
+            <img src="Musical Notes.jpg" alt="">
+        </div>
+        <div class="gallary-item">
+            <img src="Vinca.jpg" alt="">
+        </div>
+        <div class="gallary-item">
+            <img src="Wild Thistle.jpg" alt="">
+        </div>
+        <div class="gallary-item">
+            <img src="Crape Jasmine.jpg" alt="">
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+        © 2026 | All rights reserves | Blooming Season
+    </footer>
+</body>
+</html>
